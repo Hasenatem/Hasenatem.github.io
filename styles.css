@@ -9,3 +9,12 @@ p {
     margin-left: 15%;
     margin-right: 15%
 }
+
+.textbox {
+    height: 80%;
+    margin: auto;
+    width: 75%;
+    border: 3px solid SlateGrey;
+    padding: 1%;
+    overflow: auto
+}
