@@ -2,16 +2,34 @@
 <html lang="en">
 <head>
     <link href="../styles/styles.css" rel="stylesheet">
+<!--This script closes active modals-->
+    <script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            let modal = document.getElementById("modal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+<!-- The Modal -->
+<div id="modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <p>Some text in the Modal..</p>
+    </div>
+</div>
 <ul class="navbar">
     <li class="navitem"><a href="#">Item 1 this is a thing i want to add</a></li>
     <li class="navitem"><a href="#">Item 2</a></li>
     <li class="navitem"><a href="#">Item 3</a></li>
     <li class="navitem"><a href="#">Item 4</a></li>
-    <li class="navitem"><a href="#">Item 5</a></li>
+
 
 </ul>
 <button onclick="location.href='../index.html'">Back</button>
