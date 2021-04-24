@@ -10,6 +10,25 @@ p {
     margin-right: 15%
 }
 
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: darkslateblue
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+td {
+    background-color: bisque;
+    padding:2%
+}
+
 /* Textbox for story entries*/
 .textbox {
     height: 80%;

@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="../styles.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <script src="../js/translation.js"></script>
+    <title>Aesum</title>
 </head>
 <body>
-<button onclick="location.href='../index.html'">Back</button>
-<div class="textbox">
-    <p>
+<ul class="navbar">
+        <li class="navitem"><a href="../index.html">Home</a></li>
+        <li class="navitem"><a onclick="change_page('ger')">German</a></li>
+        <li class="navitem"><a onclick="change_page('en')">English</a></li>
+</ul>
+<br>
+<br>
+<div id="ger_page" style="display: block">
+    <div class="textbox">
+        <p class="textcontent">
         Der Planet Aesum ist der fünfte Planet unseres Sonnensystems und zeichnet sich vorallem dadurch aus, 
         dass es der einzige Planet ist auf dem der allseits bekannte Hasenatem blühen kann.
         Der blühende Hasenatem ist deshalb so wichtig, weil er dem der es isst besondere Kräfte verleiht,
@@ -17,14 +25,34 @@
         weswegen jedes Jahr neue Expeditionen auf den Planeten starten um ein Exemplar der seltenen Blüten zu finden.
         Das stellt die Expeditionen aber vor eine große Herrausforderung, 
         denn Aesum ist ein wilder Planet voller einheimischer Pflanzen und Tiere die sich in einem harten Kampf um das Überleben befinden.
-        Die Einheimischen des Planeten sind stark, gefählich und nur schiwerig einzuschätzen 
+        Die Einheimischen sind stark, gefählich und nur schiwerig einzuschätzen
         und natürlich haben sie auch erkannt was für Kräfte die Blüten des Hasenatems verleihen können.
         Aus diesem Grund landen die allermeisten Expeditionen immer an den Polen des Planeten, wo extreme Kälte herrscht,
-        die den Kampf um das Überleben in diesem Bereich schwierig gemacht haben und uns das Überleben auf dem Planeten erleichtern.
+        die den Kampf um das Überleben in diesem Bereich schwierig machen und uns das Überleben auf dem Planeten erleichtern.
         Wirklich in das Innere, also nahe des Äquators des Planeten, hat es noch niemand erfoglreich geschafft, 
         auch wenn man dort, so wird es vermutet, den meisten blühenden Hasenatem finden kann.
-    </p>
-    <p>-- Auszug aus dem Buch "Unsere zwölfeinhalb Planeten".</p>
+        <br><br>
+        -- Auszug aus dem Buch "Unsere zwölfeinhalb Planeten"
+        </p>
+    </div>
 </div>
+<div id="en_page" style="display: none">
+    <div class="textbox">
+        <p class="textcontent">
+        The planet Aesum is the fifth planet in our solar system. It distinguishes itself as the only planet on which the widely spread Hasenatem can bloom.
+        The blooming Hasenatem is important, because it grants whoever eats it special powers that can't be obtained otherwise.
+        Why Hasenatem can only bloom on this particular planet is unknown to sience, 
+        which is why every year new expeditions embark to the planet to find a specimen of the rare blossom.
+        However, this confronts the expeditions with a big challenge, because Aesum is a wild planet full of indigenous plants and animals struggling to survive.
+        The indigenous are stong, dangerous and unpredictable and of course they too, have recognied what powers the Hasenatem can grant.
+        For this reason, most expeditions land on the poles of the planet, where the exteme cold, 
+        makes the struggle to survive difficult and makes surviving for us easier.
+        Indeed, nobody has made it inwards, close to the equator, sucessfully, 
+        eventhough it is speculated that you can find most blooming Hasenatem there.
+        <br><br>
+        -- Excerpt from the book "Our twelve and a half planets"
+        </p>
+    </div>
+    </div>
 </body>
 </html>
