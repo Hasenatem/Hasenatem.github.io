@@ -1,36 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="../styles.css" rel="stylesheet">
+    <script src="../js/translation.js"></script>
+    <link href="../styles/styles.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Unity</title>
 </head>
 <body>
-<button onclick="location.href='../index.html'">Back</button>
-<div class="textbox">
-    <p>
-        Sie schaltete das Radio an. Es liefen uralte Songs aus den kleinen, mittlerweile verstauben
-    Lautsprechern. Amelie konnte sich ein Lächeln nicht verkneifen. "Ach George", dachte sie. "Wieso höre ich mir
-    eigentlich noch Lieder im Radio an? Nur weil du mich auf diesen altmodischen Trip mit dieser altmodischen Technik
-    gebracht hast." Die Musik knatterte und rauschte ein wenig, immerhin gab es überall in der Umgebung, für das Auge
-    vollkommen unsichtbar, Energiequellen jeglicher Art. Dennoch hielt eine kleine Gesellschaft am Radio als Medium
-    fest. Amelia seufzte ein wenig vor sich hin und nahm einen Schluck Tee zu sich. Er war kalt und bitter, immerhin
-    hatte er jetzt schon 2 Stunden vor sich hin gezogen. "Wissen sie. Dieser Tee hatte eine empfohlene Ziehzeit von 6
-    Minuten. Ich habe ihnen auch zu dieser Zeit empfohlen ihn schnellstmöglich zu trinken." Amelie war allerdings in
-    Gedanken woanders und setzte sich möglichst nah an das Radio heran. "Jaja Effie. Ich habe dich eben auch schon
-    gehört. Uegh. Vielleicht sollte ich doch ab und an auf dich hören." Der kleine Roboter fuhr einen noch kleineren
-    Greifarm aus, nahm die Tasse an sich, sàuberte sie und stellte sie zurück ins Regal. Danach flog er in der Wohnung
-    umher und staubte routinemäßig alle Oberflächen ab. Seine Arbeit wurde durch ein leichtes unregelmäßiges Surren des
-    Motors begleitet. Wüsste man nicht besser, dass Effie ein Roboter war, hätte man denken können, es wäre ein
-    genervtes Grummeln. Amelie ging zu ihrem Balkon und öffnete die Tür. Eisiger Wind traf ihre Haut. Es war eine kühle
-    Nacht im April, der Hasenatem im Pflanzkasten blühte natürlich nicht.. "Effie. Was denkst du tut George gerade? Geht
-    es ihm gut?" Der Roboter drehte sich zu Amelie um. "Nun ja. Ich habe keinen Zugriff auf Militärdaten. So wie die
-    Dinge gerade stehen, sollte er wohlauf sein. Immerhin befinden wir uns nicht in offenem Konflikt. Das Militär steht
-    nur für den Fall der Fälle, wie die Menschen gerne sagen, bereit." Amelia schmollte leicht vor sich hin. Die Antwort
-    war beinahe dieselbe, wie jedes mal, wenn sie diese Frage stellte. Nichtsahnend, dass sie die Antwort, die sie sich
-    ersehnte, bald bekommen würde, blickte sie hinauf auf den Sternenhimmel, in der Hoffnung, von ihrem Balkon aus
-        Station Venice zu erblicken.
-    </p>
+<ul class="navbar">
+    <li class="navitem"><a href="../index.html">Home</a></li>
+    <li class="navitem"><a onclick="change_page('ger')">German</a></li>
+    <li class="navitem"><a onclick="change_page('en')">English</a></li>
+</ul>
+<br>
+<br>
+<div id="ger_page" style="display: block">
+    <div class="textbox">
+        <p class="textcontent">
+            Sie schaltete das Radio an. Es liefen uralte Songs aus den kleinen, mittlerweile verstauben
+            Lautsprechern. Amelie konnte sich ein Lächeln nicht verkneifen. "Ach George", dachte sie. "Wieso höre ich
+            mir
+            eigentlich noch Lieder im Radio an? Nur weil du mich auf diesen altmodischen Trip mit dieser altmodischen
+            Technik
+            gebracht hast." Die Musik knatterte und rauschte ein wenig, immerhin gab es überall in der Umgebung, für das
+            Auge
+            vollkommen unsichtbar, Energiequellen jeglicher Art. Dennoch hielt eine kleine Gesellschaft am Radio als
+            Medium
+            fest. Amelia seufzte ein wenig vor sich hin und nahm einen Schluck Tee zu sich. Er war kalt und bitter,
+            immerhin
+            hatte er jetzt schon 2 Stunden vor sich hin gezogen. "Wissen sie. Dieser Tee hatte eine empfohlene Ziehzeit
+            von 6
+            Minuten. Ich habe ihnen auch zu dieser Zeit empfohlen ihn schnellstmöglich zu trinken." Amelie war
+            allerdings in
+            Gedanken woanders und setzte sich möglichst nah an das Radio heran. "Jaja Effie. Ich habe dich eben auch
+            schon
+            gehört. Uegh. Vielleicht sollte ich doch ab und an auf dich hören." Der kleine Roboter fuhr einen noch
+            kleineren
+            Greifarm aus, nahm die Tasse an sich, sàuberte sie und stellte sie zurück ins Regal. Danach flog er in der
+            Wohnung
+            umher und staubte routinemäßig alle Oberflächen ab. Seine Arbeit wurde durch ein leichtes unregelmäßiges
+            Surren des
+            Motors begleitet. Wüsste man nicht besser, dass Effie ein Roboter war, hätte man denken können, es wäre ein
+            genervtes Grummeln. Amelie ging zu ihrem Balkon und öffnete die Tür. Eisiger Wind traf ihre Haut. Es war
+            eine kühle
+            Nacht im April, der Hasenatem im Pflanzkasten blühte natürlich nicht. "Effie. Was denkst du tut George
+            gerade? Geht
+            es ihm gut?" Der Roboter drehte sich zu Amelie um. "Nun ja. Ich habe keinen Zugriff auf Militärdaten. So wie
+            die
+            Dinge gerade stehen, sollte er wohlauf sein. Immerhin befinden wir uns nicht in offenem Konflikt. Das
+            Militär steht
+            nur für den Fall der Fälle, wie die Menschen gerne sagen, bereit." Amelia schmollte leicht vor sich hin. Die
+            Antwort
+            war beinahe dieselbe, wie jedes mal, wenn sie diese Frage stellte. Nichtsahnend, dass sie die Antwort, die
+            sie sich
+            ersehnte, bald bekommen würde, blickte sie hinauf auf den Sternenhimmel, in der Hoffnung, von ihrem Balkon
+            aus
+            Station Venice zu erblicken.
+        </p>
+    </div>
+</div>
+
+<div id="en_page" style="display: none">
+    <div class="textbox">
+        <p class="textcontent">
+            She turned on the radio. Ancient songs played from the small, now dusty speakers. Amelie couldn't help but
+            smile. "Oh George," she thought. "Why do I still listen to songs on the radio? Just because you took me on
+            this old-fashioned trip with this old-fashioned technology." The music crackled and rustled a little, after
+            all, there were energy sources of all kinds everywhere in the area, completely invisible to the eye. The
+            poor radio was having trouble keeping its reception.
+            Nevertheless, a small society stuck to the radio as a medium. Amelia sighed a little and took a sip of tea.
+            It was cold and bitter, after all it had been drawing for 2 hours now. "You know. This tea had a
+            recommended steeping time of 6 minutes. I also recommended that you drink it as quickly as possible at this
+            time." Amelie's mind was elsewhere, however, and she sat down as close as possible to the radio. "Yeah, yeah
+            Effie. I've heard you now and I've heard you then. Uegh. Maybe I should listen to you from time to time."
+            The little robot extended an even smaller gripper arm, took the cup, cleaned it and put it back on the
+            shelf.
+            He then flew around the apartment and routinely dusted all surfaces. His work was accompanied by a slight,
+            irregular whirring of the engine. If you didn't know better that Effie was a robot, you'd have thought
+            it was an annoyed grumble. Amelie went to her balcony and opened the door. Icy wind hit her skin.
+            It was a cool night in April, of course the rabbitbreath in the planter wasn't blooming. "Effie. What
+            do you think George is doing right now? Is he okay?" The robot turned to Amelie.
+            "Well, yes. I have no access to military data. The way things are, he should be fine though. After all, we
+            are not
+            in open conflict. The military is only on standby, as people like to say, 'just in case.' " Amelia pouted
+            slightly.
+            The answer was the same as every time she asked that question. Unsuspecting that she would soon get
+            the real answer she longed for, she looked up at the starry sky, hoping to see Venice Station from her
+            balcony.
+        </p>
+    </div>
 </div>
 </body>
 </html>
