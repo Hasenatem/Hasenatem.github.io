@@ -26,8 +26,22 @@ table, th, td {
 
 td {
     background-color: bisque;
-    padding:2%
 }
+
+/* Style for links in tds*/
+td a {
+    display: block;
+    color: darkslateblue;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+/*Link hover*/
+td a:hover {
+    color: mediumorchid;
+    background-color: burlywood;
+}
+
 
 /* Textbox for story entries*/
 .textbox {
