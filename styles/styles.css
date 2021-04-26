@@ -35,11 +35,21 @@ td a {
     text-align: center;
     text-decoration: none;
     padding: 10px 10px;
+    box-shadow: 2px 1px 2px gray;
 }
 /*Link hover*/
 td a:hover {
     color: mediumorchid;
     background-color: burlywood;
+}
+
+td a:active {
+    box-shadow: 0 0 0 white;
+    margin: 2px 5px 10px 5px;
+}
+
+td:active {
+    box-shadow: inset;
 }
 
 
