@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-user-scalable=no">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport">
     <link href="../styles/styles.css" rel="stylesheet">
-<!--This script closes active modals-->
+    <!--This script closes active modals-->
     <script>
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             let modal = document.getElementById("modal");
             if (event.target === modal) {
                 modal.style.display = "none";
@@ -19,7 +18,7 @@ user-scalable=no">
 </head>
 <body>
 <!-- The Modal -->
-<div id="modal" class="modal">
+<div class="modal" id="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
