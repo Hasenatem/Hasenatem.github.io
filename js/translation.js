@@ -2,8 +2,8 @@ window.onload = window_load;
 
 function window_load(){
     let language = get_language_selected();
-    console.log("Loading language: " + language);
-    change_page(language);
+    if (typeof language == "string")
+        change_page(language);
 }
 
 function change_page(language) {
@@ -21,7 +21,7 @@ function change_page(language) {
 }
 
 function get_language_selected(){
-    let cookie = getCookie("lang");
+    let cookie = JSON.parse(getCookie("lang"));
     return cookie["selection"];
 }
 
