@@ -85,7 +85,7 @@ td:active {
 .navitem {
     float: left;
     border-right: 1px solid #ffffff;
-    position:sticky;
+    position: sticky;
     position: -webkit-sticky;
     top: 0;
 }
