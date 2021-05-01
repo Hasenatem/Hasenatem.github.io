@@ -1,7 +1,7 @@
 window.onload = window_load;
 
 function window_load(){
-    language = get_language_selected();
+    let language = get_language_selected();
     console.log("Loading language: " + language);
     change_page(language);
 }
@@ -21,7 +21,8 @@ function change_page(language) {
 }
 
 function get_language_selected(){
-    return getCookie("lang")["selection"];
+    let cookie = getCookie("lang");
+    return cookie["selection"];
 }
 
 function set_language_selected(language){
