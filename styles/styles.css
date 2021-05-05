@@ -36,6 +36,7 @@ td a {
     text-decoration: none;
     padding: 10px 10px;
     box-shadow: 2px 1px 2px gray;
+    border-radius: 5px;
 }
 
 /*Link hover*/
@@ -141,4 +142,37 @@ td:active {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+}
+
+/* Collapsibles*/
+.collapsible {
+    background-color: burlywood;
+    margin: 3px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    alignment: center;
+    outline: none;
+    font-size: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.active, .collapsible:hover {
+    background-color: saddlebrown;
+}
+
+.content {
+    margin: 0 auto;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 50%;
+    alignment: center;
+}
+
+.content iframe{
+    alignment: center;
 }
