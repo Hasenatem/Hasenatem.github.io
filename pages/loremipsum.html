@@ -3,7 +3,6 @@
 <head>
     <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport">
     <link href="../styles/styles.css" rel="stylesheet">
-    <!--This script closes active modals-->
     <script>
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
@@ -20,22 +19,21 @@
 <script id="cookiebanner" src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
         data-bg="saddlebrown" data-fg="white" data-link="mediumorchid" type="text/javascript"></script>
 <body>
-<!-- The Modal -->
-<div class="modal" id="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-        <p>Some text in the Modal..</p>
-    </div>
 </div>
 <ul class="navbar">
     <li class="navitem"><a href="#">Item 1 this is a thing i want to add</a></li>
     <li class="navitem"><a href="#">Item 2</a></li>
     <li class="navitem"><a href="#">Item 3</a></li>
     <li class="navitem"><a href="#">Item 4</a></li>
-
-
 </ul>
+<button type="button" class="collapsible">Open Collapsible</button>
+<div class="content">
+    <iframe width=100% height="200"
+            src="https://www.bandlab.com/embed/?id=1310703e-6a57-eb11-a607-0050f28a2802" allowfullscreen></iframe>
+</div>
+
+
 <button onclick="location.href='../index.html'">Back</button>
 <div class="textbox">
     <p class="textcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -291,4 +289,6 @@
         ornare quam viverra orci sagittis eu volutpat.</p>
 </div>
 </body>
+<script src="../js/audio_files.js"></script>
+
 </html>
