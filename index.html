@@ -6,11 +6,15 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <link href="styles/styles.css" rel="stylesheet">
     <link href="styles/authors.css" rel="stylesheet">
+    <link href="styles/sortable.css" rel="stylesheet"/>
+    <script src="js/sortable.js"></script>
     <title>Hasenatem</title>
 </head>
 <!--This is cookiebanner stuff-->
-<script id="cookiebanner" src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
-        data-bg="saddlebrown" data-fg="white" data-link="mediumorchid" type="text/javascript"></script>
+<script data-bg="saddlebrown" data-fg="white"
+        data-link="mediumorchid" id="cookiebanner"
+        src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
+        type="text/javascript"></script>
 <body>
 <ul class="navbar">
     <li class="navitem"><a onclick="change_page('ger')">German</a></li>
@@ -31,34 +35,48 @@
     </p>
 
     <h2>Einträge</h2>
-    <table>
+    <input id="filter" onkeyup="filter('filter', 'entries')" placeholder="Nach Einträgen suchen" type="text"
+           width='50%'>
+    <table class="sortable" id="entries">
+        <thead>
+        <tr>
+            <th>Story</th>
+            <th>Author</th>
+        </tr>
+        </thead>
+        <tbody>
         <!--    Geschichte auf der Erde/Weltallkonflikt-->
         <tr>
             <td><a href="pages/unity.html">
-                <div class="pageitem">X-55 Unity <span id="TQ">T.Q.</span></div>
+                <div class="pageitem">X-55 Unity</div>
             </a></td>
+            <td><span id="TQ">T.Q.</span></td>
         </tr>
         <!--    Forschung an künstlicher Kultivierung-->
         <tr>
             <td><a href="pages/curiosity.html">
-                <div class="pageitem">X-54 Curiosity <span id="TQ">T.Q.</span></div>
-                </a> </td>
-
+                <div class="pageitem">X-54 Curiosity</div>
+            </a></td>
+            <td><span id="TQ">T.Q.</span></td>
         </tr>
         <!--    Beschreibungen der Einzelenen Planeten-->
         <tr>
-            <td><a href="pages/aesum.html" >
-                <div class="pageitem">Unsere Zwölfeinhalb Planeten <span id="A0x0">A_0x0</span></div>
+            <td><a href="pages/aesum.html">
+                <div class="pageitem">Unsere Zwölfeinhalb Planeten</div>
             </a></td>
+            <td><span id="A0x0">A_0x0</span></td>
         </tr>
         <!--    Doggos-->
         <tr>
             <td><a href="pages/rex.html">
-                <div class="pageitem">Die Memoiren des Dr. Cornelius Rex <span id="A0x0">A_0x0</span></div>
+                <div class="pageitem">Die Memoiren des Dr. Cornelius Rex</div>
             </a></td>
+            <td><span id="A0x0">A_0x0</span></td>
         </tr>
         <!--    You can check styles with this loremipsum page-->
         <!--        <li><button onclick="location.href='pages/loremipsum.html'">Lorem Ipsum</button></li>-->
+        </tbody>
+
     </table>
 
     <h3>Impressum</h3>
@@ -66,35 +84,63 @@
         und <a href="http://weglove.github.io/">Archive_0x0 (Tobias)</a></p>
 </div>
 <div id="en_page" style="display: none">
-        <h1>Hasenatem</h1>
-        <p>
-        "Originally, Hasenatem was a widely spread useful plant in our solar system, which could be found in many different climates and soils.
-        With the invention of interplanetary flight the world's attention fell onto a wild and dangerous planet on which the Hasenatem could unexeplicably starte to bloom.
-        The consumption of the plant grants its consumer unthinkable mutations both helpfull and harmfull, which is the reason why it is sought after by the mighty."
-        </p>
-        <p>
+    <h1>Hasenatem</h1>
+    <p>
+        "Originally, Hasenatem was a widely spread useful plant in our solar system, which could be found in many
+        different climates and soils.
+        With the invention of interplanetary flight the world's attention fell onto a wild and dangerous planet on which
+        the Hasenatem could unexeplicably starte to bloom.
+        The consumption of the plant grants its consumer unthinkable mutations both helpfull and harmfull, which is the
+        reason why it is sought after by the mighty."
+    </p>
+    <p>
         -- Excerpt from the book "The history of the Hasenatem blossom"
-        </p>
-    
-        <h2>Entries</h2>
-        <table>
-            <!--    Geschichte auf der Erde/Weltallkonflikt-->
-            <tr>
-                <td><a href="pages/unity.html" ><div class="pageitem">X-55 Unity <span style="float: right; font-family: 'orya',cursive;">T.Q.</span></div></a></td>
-            </tr>
-            <!--    Forschung an künstlicher Kultivierung-->
-            <tr>
-                <td><a href="pages/curiosity.html" ><div class="pageitem">X-54 Curiosity <span style="float: right; font-family: 'orya',cursive;">T.Q.</span></div></a></td>
-            </tr>
-            <!--    Beschreibungen der Einzelenen Planeten-->
-            <tr>
-                <td><a href="pages/aesum.html" ><div class="pageitem">Our twelve and a half planets <span style="float: right; font-family: 'Courier';">A_0x0</span></div></a></td>
-            </tr>
-            <!--    Doggos-->
-            <tr>
-                <td><a href="pages/rex.html" ><div class="pageitem">The memoires of Dr. Cornelius Rex <span style="float: right; font-family: 'Courier';">A_0x0</span></div></a></td>
-            </tr>
-            <!--    You can check styles with this loremipsum page-->
+    </p>
+
+    <h2>Entries</h2>
+    <input id="filter_en" onkeyup="filter('filter_en', 'entries_en')" placeholder="Search for entries" type="text"
+           width='50%'>
+
+    <table class="sortable" id="entries_en">
+        <thead>
+        <tr>
+            <th>Story</th>
+            <th>Author</th>
+        </tr>
+        </thead>
+        <!--    Geschichte auf der Erde/Weltallkonflikt-->
+        <tr>
+            <td><a href="pages/unity.html">
+                <div class="pageitem">X-55 Unity
+                </div>
+            </a></td>
+            <td><span id="TQ">T.Q.</span></td>
+
+        </tr>
+        <!--    Forschung an künstlicher Kultivierung-->
+        <tr>
+            <td><a href="pages/curiosity.html">
+                <div class="pageitem">X-54 Curiosity</div>
+            </a></td>
+            <td><span id="TQ">T.Q.</span></td>
+        </tr>
+        <!--    Beschreibungen der Einzelenen Planeten-->
+        <tr>
+            <td><a href="pages/aesum.html">
+                <div class="pageitem">Our twelve and a half planets</div>
+            </a></td>
+            <td><span id="A0x0">A_0x0</span></td>
+
+        </tr>
+        <!--    Doggos-->
+        <tr>
+            <td><a href="pages/rex.html">
+                <div class="pageitem">The memoires of Dr. Cornelius Rex</div>
+            </a></td>
+            <td><span id="A0x0">A_0x0</span></td>
+
+        </tr>
+        <!--    You can check styles with this loremipsum page-->
         <!--        <li><button onclick="location.href='pages/loremipsum.html'">Lorem Ipsum</button></li>-->
     </table>
 
