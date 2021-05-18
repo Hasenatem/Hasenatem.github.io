@@ -194,7 +194,7 @@ body > .pageination {
     style: inline-block;
 }
 
-bidy > .pageination a {
+body > .pageination a {
     display: block;
     color: red;
     text-decoration: white;
