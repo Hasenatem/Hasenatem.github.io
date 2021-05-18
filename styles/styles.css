@@ -196,16 +196,18 @@ td:active {
 
 .pageination a {
     display: block;
-    color: white;
+    color: red;
     text-decoration: white;
 }
 
 .pageination a:hover:not(.active){
     background-color: saddlebrown;
+    color: red;
 }
 
 .pageination a.active {
     background-color: saddlebrown;
+    color: red;
 }
 
 
