@@ -1,18 +1,19 @@
-pageination {
-    style: inline-block;
+.pageination {
+    display: inline-block;
 }
 
-pageination a {
+.pageination a {
     display: block;
-    color: red;
+    color: white;
     text-decoration: white;
 }
 
-pageination a:hover:not(.active){
+.pageination a:hover:not(.active){
     background-color: saddlebrown;
-    color: red;
+    color: white;
 }
-pageination a.active {
+
+.pageination a.active {
     background-color: saddlebrown;
-    color: red;
+    color: white;
 }
