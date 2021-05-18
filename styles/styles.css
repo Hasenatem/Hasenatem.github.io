@@ -200,11 +200,11 @@ td:active {
     text-decoration: white;
 }
 
-.pageination a:hover.not(active){
+.pageination a:hover:not(.active){
     background-color: saddlebrown;
 }
 
-.pageination a:active {
+.pageination a.active {
     background-color: saddlebrown;
 }
 
