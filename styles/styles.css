@@ -196,7 +196,8 @@ td:active {
 
 .pageination a {
     display: block;
-    color: white
+    color: white;
+    text-decoration: white;
 }
 
 .pageination a:hover.not(active){
