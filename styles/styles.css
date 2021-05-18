@@ -190,24 +190,4 @@ td:active {
     background: beige;
 }
 
-body > .pageination {
-    style: inline-block;
-}
-
-body > .pageination a {
-    display: block;
-    color: red;
-    text-decoration: white;
-}
-
-body > .pageination a:hover:not(.active){
-    background-color: saddlebrown;
-    color: red;
-}
-
-body > .pageination a.active {
-    background-color: saddlebrown;
-    color: red;
-}
-
 
