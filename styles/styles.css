@@ -190,5 +190,21 @@ td:active {
     background: beige;
 }
 
+.pageination {
+    style: inline-block;
+}
+
+.pageination a {
+    display: block;
+    color: white
+}
+
+.pageination a:hover.not(active){
+    background-color: saddlebrown;
+}
+
+.pageination a:active {
+    background-color: saddlebrown;
+}
 
 
