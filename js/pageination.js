@@ -1,23 +1,32 @@
-$(document).ready(function () {
-    console.log("Hey. started stuff.")
-    var content = [];
-    loadpage();
-    console.log("Hey these functions were done");
-    console.log(content);
-   $('.sync-pagination').twbsPagination({
+async function load_content(url) {
+    //Wait for the fetch
+    let response = await fetch(url);
+    // Wait for the response
+    let content = await response.json();
+    // finally return the data
+    return content;
+}
+
+// Asynchronous do start function which gets loaded on document ready, first loads content asynchronous, then adds
+// The onclick functions for each page
+async function do_start(){
+    let content_list = [];
+    await load_content("https://hasenatem.github.io/resources/pageination_example.json").then(data => content_list = data.content);
+    console.log(content_list)
+    await $('.sync-pagination').twbsPagination({
         totalPages: 10,
         visiblePages: 4,
         next: 'Next',
         prev: 'Prev',
         onPageClick: function (evt, page) {
             console.log("Added onclick function")
-            $('#content').text('Page ' + page);
+            $('#content').text('Page ' + content_list[page-1]);
         }
     });
 
-    function loadpage() {
-        $.getJSON('https://hasenatem.github.io/resources/pageination_example.json', function (data) {
-            content = data;
-        });
-    }
-});
+}
+
+
+$(document).ready(do_start())
+
+
