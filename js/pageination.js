@@ -11,7 +11,13 @@ async function load_content(url) {
 // The onclick functions for each page
 async function do_start(){
     let content_list = [];
-    await load_content("https://hasenatem.github.io/resources/pageination_example.json").then(data => content_list = data.content);
+    // Get name of the page
+    let href = document.location.href;
+    let lastSegment = href.substr(href.lastIndexOf('/') +1);
+    let name = lastSegment.split(".")[0]
+    let url_string = "https://hasenatem.github.io/resources/" + name + ".json";
+    console.log(url_string)
+    await load_content(url_string).then(data => content_list = data.content);
     console.log(content_list)
     await $('.sync-pagination').twbsPagination({
         totalPages: 10,
