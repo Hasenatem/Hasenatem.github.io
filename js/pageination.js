@@ -10,18 +10,7 @@ jquery.setAttribute("async", "false");
 
 let bootstrap = document.createElement("script");
 bootstrap.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js");
-bootstrap.setAttribute("async", "false");
-
-let pagination = document.createElement("script");
-pagination.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.1/jquery.twbsPagination.min.js");
-pagination.setAttribute("async", "false");
-
-let head = document.head;
-head.insertBefore(pagination, head.firstElementChild);
-head.insertBefore(bootstrap, head.firstElementChild);
-head.insertBefore(jquery, head.firstElementChild);
-head.insertBefore(css, head.firstElementChild);
-
+bootstrap.setAttribute("async
 $('.sync-pagination').twbsPagination({
         totalPages: 10,
         visiblePages: 4,
