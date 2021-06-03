@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
 
     function loadpage() {
-        $.getJSON('../resources/pageination_example.json', function (data) {
+        $.getJSON('https://hasenatem.github.io/resources/pageination_example.json', function (data) {
             content = data;
         });
     }
