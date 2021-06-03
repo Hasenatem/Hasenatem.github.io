@@ -1,20 +1,23 @@
-var list = new Array();
-$('.sync-pagination').twbsPagination({
+$(document).ready(function () {
+    console.log("Hey. started stuff.")
+    var content = [];
+    loadpage();
+    console.log("Hey these functions were done");
+    console.log(content);
+   $('.sync-pagination').twbsPagination({
         totalPages: 10,
         visiblePages: 4,
         next: 'Next',
         prev: 'Prev',
         onPageClick: function (evt, page) {
-            loadpage();
-            $('#content').text('Page ' + list[page]);
+            console.log("Added onclick function")
+            $('#content').text('Page ' + page);
         }
     });
 
-function loadpage() {
-    $.getJSON('../resources/pageination_example.json', function (data) {
-        list = data.content;
-    }).error(function(){
-            console.log('error: json not loaded');
+    function loadpage() {
+        $.getJSON('../resources/pageination_example.json', function (data) {
+            content = data;
         });
-    });
-}
+    }
+});
