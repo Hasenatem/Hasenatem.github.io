@@ -31,6 +31,13 @@ function change_page(language) {
     }
 }
 
+function change_page_content(language) {
+    //Change page cookie to english
+    change_page(language);
+    // Reload for now
+    location.reload();
+}
+
 /**
  * Returns the abbrveations tring for the language that is saved in the cookie.
  * TODO Better Return value if cookir doesn't exist.

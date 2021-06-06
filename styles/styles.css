@@ -62,10 +62,10 @@ td:active {
 
 /* Textbox for story entries*/
 .textbox {
-    height: 80%;
+    height: 60%;
     margin: auto;
     width: 75%;
-    border: 3px solid SlateGrey;
+    border: 3px solid saddlebrown;
     padding: 1%;
     overflow: auto
 }
