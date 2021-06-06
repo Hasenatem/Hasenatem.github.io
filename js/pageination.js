@@ -17,7 +17,7 @@ async function do_start(){
     let name = lastSegment.split(".")[0]
     check_cookie(name);
     // Load json from url (Has to be the same name, as the page; naming convention)
-    let url_string = "https://hasenatem.github.io/resources/" + name + ".json";
+    let url_string = "https://hasenatem.github.io/resources/stories/" + name + ".json";
     console.log(url_string)
     const language = await get_language_selected();
     let current_content = "content_" + language;
@@ -33,7 +33,7 @@ async function do_start(){
         startPage: await parseInt(get_cookie(name)),
         onPageClick: function (evt, page) {
             console.log("Added onclick function")
-            $('#content').text('Page ' + content_list[page-1]);
+            $('#content').text(content_list[page-1]);
             set_cookie(name, page, 365);
         }
     });
