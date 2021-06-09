@@ -15,7 +15,7 @@ async function do_start(){
     let href = document.location.href;
     let lastSegment = href.substr(href.lastIndexOf('/') +1);
     let name = lastSegment.split(".")[0]
-    check_cookie(name);
+    await check_cookie(name);
     // Load json from url (Has to be the same name, as the page; naming convention)
     let url_string = "https://hasenatem.github.io/resources/stories/" + name + ".json";
     console.log(url_string)
