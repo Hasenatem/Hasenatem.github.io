@@ -15,6 +15,7 @@ async function do_start(){
     let href = document.location.href;
     let lastSegment = href.substr(href.lastIndexOf('/') +1);
     let name = lastSegment.split(".")[0]
+    //Thus checks and potentially sets the cookie for the page
     await check_cookie(name);
     // Load json from url (Has to be the same name, as the page; naming convention)
     let url_string = "https://hasenatem.github.io/resources/stories/" + name + ".json";
@@ -69,8 +70,6 @@ function check_cookie(cname){
         return true;
     } else {
         set_cookie(cname, 1, 365);
-        // Reload when new cookie is set to catch first time open for now
-        location.reload();
         return true;
     }
 }
