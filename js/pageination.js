@@ -69,6 +69,8 @@ function check_cookie(cname){
         return true;
     } else {
         set_cookie(cname, 1, 365);
+        // Reload when new cookie is set to catch first time open for now
+        location.reload();
         return true;
     }
 }
