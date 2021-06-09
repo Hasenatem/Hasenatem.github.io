@@ -43,16 +43,9 @@ function change_page_content(language) {
  * TODO Better Return value if cookir doesn't exist.
  */
 function get_language_selected(){
-    try {
     let cookie = JSON.parse(getCookie("lang"));
-    console.log(cookie);
-    //If error, there is no cookie set yet.  
-    } catch(err) {
-    //If no cookie, set ger as default
-    set_language_selected("ger");
-    let cookie = JSON.parse(getCookie("lang"));
-} finally {
-return cookie["selection"];
+    console.log(JSON.stringify(cookie));
+    return cookie["selection"];
 }
 
 /**
