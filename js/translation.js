@@ -44,6 +44,7 @@ function change_page_content(language) {
  */
 function get_language_selected(){
     let cookie = JSON.parse(getCookie("lang"));
+    console.log(JSON.stringify(cookie));
     return cookie["selection"];
 }
 
